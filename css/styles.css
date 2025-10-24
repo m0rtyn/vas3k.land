@@ -90,10 +90,10 @@ html, body {
 
 .citizenship-result { margin-top: 12px; background: #eaffea; border: 4px double #2a8f2a; padding: 12px; display: inline-block; }
 
-.symbols { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; align-items: start; }
 .symbol { text-align: center; border: 3px solid var(--border); padding: 10px; background: #fdfdfd; }
 .symbol img { width: 100%; height: auto; }
 .symbol-caption { margin-top: 6px; font-size: 14px; color: #333; }
+.symbols-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
 
 .faq { display: grid; gap: 10px; }
 .faq .item { border: 3px groove var(--border); padding: 10px; background: #fff; }
