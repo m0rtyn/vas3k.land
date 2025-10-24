@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "Vas3kland — official information portal",
+    "description": "Official information portal of Vas3kland, discovered by the vas3k.club expedition during a visit to Liberland."
+  },
+  "ui": {
+    "banner": "OFFICIAL VAS3KLAND WEBSITE • DECREES • DOCUMENTS • CITIZENSHIP • CONTACTS",
+    "banner2": "REGISTRY UPDATE • SERVERS UNDER SCHEDULED MAINTENANCE • PLEASE REMAIN CALM",
+    "lang_ru": "RUS",
+    "lang_en": "ENG",
+    "retro_on": "Enable retro",
+    "retro_off": "Disable retro"
+  },
+  "nav": {
+    "about": "About",
+    "story": "Story",
+    "principles": "Principles",
+    "citizenship": "Citizenship",
+    "symbols": "Symbols",
+    "memes": "Memes",
+    "faq": "FAQ",
+    "links": "Links"
+  },
+  "hero": {
+    "title": "Vas3kland",
+  "subtitle": "Official information portal",
+    "cta": "Join"
+  },
+  "about": {
+    "title": "About",
+  "text": "Vas3kland was discovered by the vas3k.club community expedition during a visit to Liberland on the Serbia–Croatia border. Founded on openness and respect for facts."
+  },
+  "story": {
+    "title": "The discovery story",
+  "p1": "Officially: the expedition was looking for inspiration and identified a new country aligned with community values.",
+  "p2": "Unofficial interpretation: an initiative of community members. Details are in the original thread."
+  },
+  "principles": {
+    "title": "Principles",
+    "items": [
+      "Openness and factuality",
+      "Responsibility and mutual respect",
+      "Connection with the vas3k.club community",
+      "Development through initiatives and expeditions",
+      "Transparency and autonomy"
+    ]
+  },
+  "citizenship": {
+    "title": "Citizenship",
+  "desc": "The application takes about 10 seconds. Applications are processed automatically.",
+    "form": {
+      "name": "Your name",
+      "reason": "Why are you worthy?",
+      "submit": "Become a citizen"
+    },
+    "success": "Congratulations! You are a citizen of Vas3kland."
+  },
+  "symbols": {
+    "title": "Symbols",
+    "flag": { "title": "Vas3kland flag" },
+    "emblem": { "title": "Vas3kland emblem" },
+    "map": { "title": "Map (conceptual)" }
+  },
+  "faq": {
+    "title": "Frequently asked",
+    "items": [
+      { "q": "Is it a real country?", "a": "It’s a real idea. The rest depends on your imagination’s borders." },
+      { "q": "Where to get a passport?", "a": "In your heart. For now — print this page." },
+      { "q": "What’s the currency?", "a": "Karma, memes and kindness." }
+    ]
+  },
+  "memes": {
+    "title": "Club memes",
+    "items": [
+      "✖︎ — the club’s logo. The cross marks belonging.",
+      "The Hat — respect for traditions (highly recommended).",
+      "Expeditions — our way to explore together.",
+      "Facts above opinions — we value sources and originals.",
+      "TL;DR — short and to the point, with links to details."
+    ]
+  },
+  "links": {
+    "title": "Links",
+    "post": "Post and thread on vas3k.club →",
+    "about_club": "About vas3k.club →",
+    "disclaimer": "Informational site. Sources are provided."
+  },
+  "footer": {
+    "counter": "Visits",
+    "rights": "© Vas3kland. All rights reserved."
+  }
+}

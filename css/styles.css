@@ -1,0 +1,132 @@
+/* Vas3kland early-web / gov-site post-irony theme */
+:root {
+  --bg: #fffef7;
+  --fg: #222;
+  --brand: #ff2bd6;
+  --brand2: #2bf0ff;
+  --accent: #ff6a00; /* vivid orange accent */
+  --border: #0b63ce;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', 'Chalkboard SE', cursive;
+  background: var(--bg) url('../assets/bg-grid.svg');
+  color: var(--fg);
+}
+
+.container {
+  width: min(980px, 94%);
+  margin: 0 auto;
+}
+
+.marquee-wrap {
+  background: linear-gradient(90deg, var(--brand), var(--brand2));
+  color: #000;
+  border-bottom: 4px double var(--border);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.marquee-wrap .marquee { overflow: hidden; white-space: nowrap; }
+.marquee-wrap .marquee-inner { display: inline-block; padding: 6px 0; will-change: transform; }
+.marquee-left .marquee-inner { animation: marquee-left 18s linear infinite; }
+.marquee-right .marquee-inner { animation: marquee-right 24s linear infinite; }
+.marquee-wrap.bottom { border-top: 4px double var(--border); border-bottom: none; background: linear-gradient(90deg, var(--brand2), var(--brand)); }
+
+@keyframes marquee-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+@keyframes marquee-right {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.site-header {
+  background: #fff;
+  border-bottom: 4px ridge var(--border);
+  box-shadow: 0 6px 0 var(--accent);
+}
+.site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; gap: 12px; align-items: center; }
+.flag { width: 64px; height: 48px; image-rendering: pixelated; }
+.site-title { margin: 8px 0 0; font-size: 36px; letter-spacing: 1px; }
+.site-subtitle { margin: 2px 0 8px; color: #333; font-size: 14px; }
+
+.controls .lang-btn {
+  font-family: inherit;
+  background: var(--accent);
+  border: 3px outset var(--border);
+  padding: 6px 10px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.controls .lang-btn:active { border-style: inset; }
+.controls .retro-btn { margin-left: 8px; background: repeating-linear-gradient(45deg, #fff, #fff 6px, #ffe600 6px, #ffe600 12px); border: 3px outset #a00; color: #000; padding: 6px 10px; cursor: pointer; }
+.controls .retro-btn:active { border-style: inset; }
+
+.top-nav { background: #eef7ff; border-bottom: 3px dashed var(--border); }
+.top-nav .container { display: flex; gap: 12px; flex-wrap: wrap; }
+.top-nav a { color: #004; text-decoration: none; padding: 8px 10px; display: inline-block; border-bottom: 3px solid transparent; transition: border-color .15s ease, background .15s ease; }
+.top-nav a:hover { background: #fff; border-bottom-color: var(--accent); }
+
+.section { padding: 32px 0; }
+.section.alt { background: #fff; box-shadow: inset 0 0 20px rgba(0,0,0,0.05); }
+.section h2 { margin-top: 0; border-bottom: 4px groove var(--border); display: inline-block; padding-right: 8px; box-shadow: 0 -6px 0 var(--accent) inset; }
+
+.principles-list { list-style: square; padding-left: 20px; }
+.principles-list li { margin-bottom: 6px; }
+.principles-list li::marker { color: var(--accent); }
+
+.memes-list { list-style: '✖︎  '; padding-left: 28px; }
+.memes-list li { margin-bottom: 6px; }
+
+.citizenship-form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 720px; }
+.citizenship-form label { display: flex; flex-direction: column; gap: 6px; }
+.citizenship-form input { padding: 8px; border: 3px inset var(--border); background: #fff; }
+.citizenship-form .cta { grid-column: 1 / -1; justify-self: start; background: var(--accent); border: 3px outset var(--border); padding: 8px 14px; cursor: pointer; }
+.citizenship-form .cta:active { border-style: inset; }
+
+.citizenship-result { margin-top: 12px; background: #eaffea; border: 4px double #2a8f2a; padding: 12px; display: inline-block; }
+
+.symbols { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; align-items: start; }
+.symbol { text-align: center; border: 3px solid var(--border); padding: 10px; background: #fdfdfd; }
+.symbol img { width: 100%; height: auto; }
+.symbol-caption { margin-top: 6px; font-size: 14px; color: #333; }
+
+.faq { display: grid; gap: 10px; }
+.faq .item { border: 3px groove var(--border); padding: 10px; background: #fff; }
+.faq .q { font-weight: 700; color: var(--accent); }
+.faq .a { margin-top: 6px; }
+
+.site-footer { background: #eef7ff; border-top: 4px ridge var(--border); padding: 16px 0; font-size: 14px; }
+.site-footer .container { display: flex; align-items: center; justify-content: space-between; }
+
+/* Small sparkle animation */
+@keyframes blinky { 50% { opacity: .3; } }
+.site-title::after { content: ' ✨'; animation: blinky 1.2s infinite; }
+
+/* Accent selection highlight */
+::selection { background: var(--accent); color: #000; }
+
+/* Retro/party mode (extra vsratost) */
+.retro .top-nav { background: repeating-linear-gradient(90deg, #ffb3b3, #ffb3b3 12px, #b3d9ff 12px, #b3d9ff 24px); border-bottom-style: double; }
+.retro .section.alt { background: repeating-linear-gradient(45deg, #fff, #fff 8px, #f7f7f7 8px, #f7f7f7 16px); }
+.retro .symbol { animation: wobble 2s ease-in-out infinite; }
+@keyframes wobble { 0%,100% { transform: rotate(-1deg); } 50% { transform: rotate(1deg); } }
+.retro .site-title { text-shadow: 2px 2px 0 #ff6a00, -2px -2px 0 #2bf0ff; }
+.retro .principles-list li::marker { color: #ff6a00; }
+.retro .faq .item { background: #fff8e6; border-color: #ff6a00; box-shadow: 0 0 0 4px #fff, 0 0 0 8px #ff6a00; }
+.retro .citizenship-form input { background: #fffffe; border-color: #ff6a00; }
+.retro .citizenship-form .cta { background: #ff6a00; color: #000; box-shadow: 0 0 0 4px #fff, 0 0 0 8px #0b63ce; }
+
+/* construction banner */
+.construction-banner { text-align: center; padding: 6px 0; }
+.construction-banner img { width: 180px; height: auto; image-rendering: pixelated; filter: drop-shadow(2px 2px 0 #000); }
+
+/* Mobile */
+@media (max-width: 640px) {
+  .citizenship-form { grid-template-columns: 1fr; }
+  .site-title { font-size: 28px; }
+}

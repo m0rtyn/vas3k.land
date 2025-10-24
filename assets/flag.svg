@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="400" viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="400" fill="#2bf0ff"/>
+  <rect width="640" height="266" fill="#ff2bd6"/>
+  <rect width="640" height="133" fill="#ffe600"/>
+  <!-- Centered club logo: bold cross like '✖︎' -->
+  <g stroke="#000000" stroke-width="66" stroke-linecap="butt">
+    <!-- Size tuned to be bold and balanced around center (320,200) -->
+    <line x1="210" y1="90" x2="430" y2="310" />
+    <line x1="430" y1="90" x2="210" y2="310" />
+  </g>
+</svg>

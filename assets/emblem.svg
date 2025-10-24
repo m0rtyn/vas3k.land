@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff2bd6"/>
+      <stop offset="1" stop-color="#2bf0ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="280" height="280" rx="24" fill="url(#g)" stroke="#0b63ce" stroke-width="6"/>
+  <circle cx="150" cy="150" r="70" fill="#fffef7" stroke="#0b63ce" stroke-width="6"/>
+  <!-- Club logo: bold cross like '✖︎' -->
+  <g stroke="#000000" stroke-width="28" stroke-linecap="butt">
+    <line x1="110" y1="110" x2="190" y2="190" />
+    <line x1="190" y1="110" x2="110" y2="190" />
+  </g>
+</svg>
